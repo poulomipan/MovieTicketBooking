@@ -1,0 +1,69 @@
+import java.util.Scanner;
+class hotel{
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        boolean o=true;
+        System.out.println("enter the room of you choice 1 for premium 2 for exclusive 3 for suite");
+        int n=sc.nextInt();
+        int cost=1,co=1,st=1;
+        int pri=1,p=1,pr=1;
+        switch(n){
+            case 1:
+                System.out.println("premiun cost 1500 per night");
+                 cost=1500;
+                break;
+                case 2:
+                    System.out.println("exclusive cost 2000 per night");
+                     co=2000;
+                    break;
+                    case 3:
+                        System.out.println("suite cost 5000 per night ");
+                         st=5000;
+                        
+                        break;
+        }
+        System.out.println("how many nights ");
+        int m=sc.nextInt();
+        if(n==1){
+             p=cost*m;
+            System.out.println("your amount would be "+p);
+            
+        }
+        else if(n==2){
+             pr=co*m;
+            System.out.println("your amount is"+pr);
+            
+        }
+        else if(n==3){
+             pri=st*m;
+            System.out.println("your required amount is "+pri);
+            
+        }
+        else{
+            System.out.println("invalid response");
+        }
+        if (pri>10000){
+            System.out.println("you get 10%discount");
+            int dis=pri*10/100;
+            System.out.println("total amount"+dis);
+            
+        }
+        else if(pr>10000){
+            System.out.println("you get 10%discount");
+            int di=pr*10/100;
+            System.out.println("total amount"+di);
+            
+        }
+        else  if(p>10000){
+            System.out.println("you get 10%discount");
+            int d=p*10/100;
+            System.out.println("total amount"+d);
+            
+        
+        
+    }
+    else{
+        System.out.println ("not today");
+    }
+} 
+}       
