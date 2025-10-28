@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class movieticket {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose a movie:");
+        System.out.println("1. Barbie (₹205)");
+        System.out.println("2. Oppenheimer (₹200)");
+        System.out.println("3. Demon Slayer (₹500)");
+        System.out.print("Enter your choice: ");
+        int n = sc.nextInt();
+
+        switch (n) {
+            case 1:
+                System.out.print("Enter number of people: ");
+                int m = sc.nextInt();
+                System.out.println("Total amount: ₹" + (m * 205));
+                break;
+            case 2:
+                System.out.print("Enter number of people: ");
+                int p = sc.nextInt();
+                System.out.println("Total amount: ₹" + (p * 200));
+                break;
+            case 3:
+                System.out.print("Enter number of people: ");
+                int d = sc.nextInt();
+                System.out.println("Total amount: ₹" + (d * 500));
+                break;
+            default:
+                System.out.println("Invalid choice. Please select 1–3.");
+        }
+    }
+}
