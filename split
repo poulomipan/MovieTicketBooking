@@ -1,0 +1,33 @@
+ import java.util.Scanner;
+ class split{
+     public static void main (String[] args){
+         Scanner sc= new Scanner(System.in);
+         System.out.println("enter total amount of money spent");
+         double n=sc.nextDouble();
+         System.out.println("enter no. of people with whom the money is splitted");
+         int m=sc.nextInt();
+         int age=0;
+         boolean cansplit=true;
+         for(int i=1;i<=m;i++){
+             System.out.println("enter people age");
+         age=sc.nextInt();
+         
+         if (age<=10){
+             System.out.println("you cant split with an 10 yrs old");
+              
+             cansplit=false;
+             break;
+             
+         }
+        
+         else{
+             System.out.println("you can split");
+             double totalamount=n/m;
+             System.out.println("total amount required is"+totalamount);
+             
+             
+         }
+         
+     }
+ }
+}
