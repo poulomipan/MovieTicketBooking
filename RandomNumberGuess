@@ -1,0 +1,34 @@
+import java.util.Random;;
+ class randomguess{
+     public static void main(String[]args){
+         Scanner sc=new Scanner(System.in);
+         Random rand=new Random();
+         int notoguess=rand.nextInt(55)+1;
+         int userguess= 1;
+         
+         
+         
+         System.out.println("guess the no.");
+          userguess=sc.nextInt();
+          while(userguess!=notoguess){
+              System.out.println("guess the no.");
+               userguess=sc.nextInt();
+              
+          }
+          if(userguess==notoguess){
+              System.out.println("ÿou guess it correctly");
+              
+          }
+          else if(userguess<notoguess){
+              System.out.println("you are low");
+          }
+          else if(userguess>notoguess){
+              System.out.println("you are high");
+              
+          }
+          else{
+              System.out.println("you are out of syllabus");
+          }
+         
+     }
+ }
