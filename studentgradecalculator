@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class newgrade{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter how many subject you have");
+        int m=sc.nextInt();
+        double[]arr=new double[m];
+        double sum=0;
+        double div=1;
+        
+        for(int p=0;p<m;p++){
+            System.out.println("enter each subject no.");
+            arr[p]=sc.nextInt();
+            sum+=arr[p];
+            
+            
+            
+        }
+        div=sum/m;
+        System.out.println("sum of all no."+div);
+    
+    if(div>=90){
+    
+    System.out.println("a");
+}
+    else if (div>=80){
+    System.out.println("b");
+}
+    
+    else if(div>=70){
+    System.out.println("C");
+}
+    else if(div>=60){
+    System.out.println("d");
+}
+    else{
+    System.out.println("very bad");
+}
+    
+    
+    
+    
+}
+}
